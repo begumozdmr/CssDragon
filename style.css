@@ -1,0 +1,394 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffd65a;
+}
+
+.container {
+    height: 25em;
+    width: 31.25em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.face {
+    position: absolute;
+    background-color: #c42754;
+    height: 6.87em;
+    width: 5.31em;
+    border-radius: 5.31em 5.31em 0 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 3.12em;
+}
+
+.face:before {
+    content: "";
+    position: absolute;
+    background-color: #8c1436;
+    height: 3.12em;
+    width: 100%;
+    border-radius: 5em;
+    z-index: -1;
+    top: 5.12em;
+}
+
+.face:after {
+    content: "";
+    position: absolute;
+    background-color: #ee3466;
+    width: 6.56em;
+    height: 4.68em;
+    border-radius: 4em;
+    left: -0.6em;
+    bottom: -0.7em;
+}
+
+.eye {
+    position: absolute;
+    background-color: #262626;
+    height: 0.62em;
+    width: 0.62em;
+    border-radius: 50%;
+    box-shadow: 2.5em 0 #262626;
+    top: 1.6em;
+    left: 1.1em;
+    animation: eye 2.5s linear infinite;
+}
+
+@keyframes eye {
+    3% {
+        height: 0;
+    }
+
+    6% {
+        height: 0.62em;
+    }
+}
+
+.ear,
+.ear:before {
+    position: absolute;
+    background-color: #8c1436;
+    height: 3.12em;
+    width: 0.68em;
+    border-radius: 1.37em;
+    border: 0.56em solid #c42754;
+}
+
+.ear {
+    top: -1.5em;
+    z-index: -1;
+    transform: rotate(-40deg);
+}
+
+.ear:before {
+    content: "";
+    top: 1.8em;
+    z-index: -1;
+    left: 2.5em;
+    transform: rotate(70deg);
+}
+
+.horn {
+    position: absolute;
+    background-color: #fca01b;
+    height: 4.25em;
+    width: 1.25em;
+    border-radius: 5em;
+    z-index: -1;
+    top: -2.5em;
+    left: 1em;
+}
+
+.horn-left:after,
+.horn-right:after {
+    content: "";
+    position: absolute;
+    background-color: #fca01b;
+    background-color: #e76a12;
+    height: 0.25em;
+    width: 70%;
+    border-radius: 0.2em;
+    z-index: -1;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0.5em;
+    box-shadow: 0 0.5em #e76a12, 0 1em #e76a12, 0 1.5em #e76a12, 0 2em #e76a12,
+        0 2.5em #e76a12;
+}
+
+.horn-left {
+    left: 1em;
+    top: -2.5em;
+}
+
+.horn-right {
+    left: 3.2em;
+    top: -2.5em;
+}
+
+.nostril,
+.nostril:after {
+    position: absolute;
+    background-color: #8c1436;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    border: 0.62em solid #ee3466;
+    z-index: 1;
+}
+
+.nostril {
+    top: 2.5em;
+    left: -1em;
+}
+
+.nostril:after {
+    content: "";
+    top: -0.6em;
+    left: 4.5em;
+}
+
+.body {
+    position: absolute;
+    width: 2.93em;
+    height: 5.62em;
+    background-color: #c42754;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    top: 11em;
+}
+
+.body:after {
+    content: "";
+    position: absolute;
+    background-color: #8c1436;
+    height: 0.5em;
+    width: 70%;
+    border-radius: 0.5em;
+    margin: auto;
+    left: 0;
+    top: 0.8em;
+    right: 0;
+    box-shadow: 0 0.9em #8c1436, 0 1.8em #8c1436, 0 2.7em #8c1436, 0 3.6em #8c1436,
+        0 4.5em #8c1436, 0 5.4em #8c1436;
+}
+
+.stomach {
+    position: absolute;
+    height: 8.75em;
+    width: 8.75em;
+    background-color: #c42754;
+    border-radius: 50%;
+    top: 4.2em;
+    left: -2.9em;
+}
+
+.stomach:after {
+    content: "";
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    background-color: #ED3365;
+    border-radius: 50%;
+    top: 5em;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.arm,
+.arm-left,
+.arm-right {
+    position: absolute;
+    background-color: rgb(140, 20, 54);
+    height: 5.62em;
+    width: 2.92em;
+    border-radius: 3.12em;
+    top: 14em;
+}
+
+.arm-left {
+    left: 9.3em;
+    transform: rotate(40deg);
+}
+
+.arm-right {
+    left: 19em;
+    transform: rotate(-40deg);
+}
+
+.arm-left:after,
+.arm-right:after {
+    position: absolute;
+    content: "";
+    height: 5.62em;
+    width: 2.92em;
+    border-radius: 3.12em;
+    background: #EE3466;
+    z-index: 3;
+}
+
+.arm-left:after {
+    left: 1em;
+    top: 1em;
+    transform: rotate(-130deg);
+}
+
+.arm-right:after {
+    left: -1.0em;
+    top: 1em;
+    transform: rotate(130deg);
+}
+
+.nail,
+.nail:after {
+    position: absolute;
+    height: 0.5em;
+    width: 1.5em;
+    border-radius: 0.5em;
+    background: #FCC50D;
+    left: 12.5em;
+    bottom: 5.7em;
+    transform: rotate(180deg);
+    box-shadow: 0 0.75em #FCC50D, 0 1.5em #FCC50D;
+}
+
+.nail:after {
+    content: "";
+    left: -4.7em;
+    bottom: -1.4em;
+}
+
+.leg {
+    background-color: #8c1436;
+    height: 5.62em;
+    width: 5.62em;
+    position: absolute;
+    z-index: -3;
+    border-radius: 3.12em;
+    top: 18.32em;
+}
+
+.leg-left {
+    left: 8em;
+}
+
+.leg-right {
+    left: 17.5em;
+}
+
+.leg-left:after,
+.leg-right:after {
+    content: "";
+    position: absolute;
+    background: #ee3466;
+    height: 2.81em;
+    width: 5.62em;
+    border-radius: 5.62em 5.62em 0 0;
+}
+
+.leg-left:after {
+    top: 2.81em;
+    left: -2em;
+}
+
+.leg-right:after {
+    top: 2.81em;
+    left: 2em;
+}
+
+.wing,
+.wing-left,
+.wing-right {
+    position: absolute;
+    height: 7.5em;
+    width: 15em;
+    background-color: #0e3441;
+    border-radius: 12.5em 12.5em 0 0;
+    top: 12.5em;
+    z-index: -4;
+    transform-origin: center;
+}
+
+.wing-left {
+    transform: translateX(90deg) rotate(20deg);
+    left: 1.5em;
+    animation: wing 3s linear infinite;
+}
+
+.wing-right {
+    transform: translateX(180deg) rotate(20deg);
+    left: 14.5em;
+    animation: wing2 3s linear infinite;
+}
+
+.wing-left:after,
+.wing-left:before,
+.wing-right:after,
+.wing-right:before {
+    content: "";
+    position: absolute;
+    background-color: #ffd65a;
+    height: 2.18em;
+    width: 4.37em;
+    border-radius: 4.37em 4.37em 0 0;
+}
+
+.wing-left:before {
+    top: 6em;
+    left: -0.1em;
+}
+
+.wing-left:after {
+    top: 6.2em;
+    left: 4em;
+}
+
+.wing-right:before {
+    top: 6em;
+    left: 10.7em;
+}
+
+.wing-right:after {
+    top: 6.2em;
+    left: 6.6em;
+}
+
+@keyframes wing {
+    50% {
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes wing2 {
+    50% {
+        transform: rotate(-30deg);
+    }
+}
+
+.shadow {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0.55em;
+    width: 21.87em;
+    height: 0.5em;
+    border-radius: 0.5em;
+    background-color: rgba(163, 130, 34, 0.4);
+    animation: shadow 3s linear infinite;
+}
+
+@keyframes shadow {
+    50% {
+        transform: scale(1.3);
+    }
+}
